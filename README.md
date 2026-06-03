@@ -1,2 +1,2 @@
 # webgis-mapid
-Task Webgis by Mapid Academy
+Task Webgis Bootcamp by Mapid Academy
