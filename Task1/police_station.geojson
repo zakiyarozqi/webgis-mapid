@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "police_station",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32748" } },
+"features": [
+{"type":"Feature","properties":{"fid":1,"Name":"Polres Metro TangKot","x":null,"y":null},"geometry":{"type":"Point","coordinates":[680605.201645333669148,9317703.264745185151696,0.0]}},
+{"type":"Feature","properties":{"fid":2,"Name":"Polsek Tangerang","x":null,"y":null},"geometry":{"type":"Point","coordinates":[681454.209233396453783,9316767.668265178799629,0.0]}},
+{"type":"Feature","properties":{"fid":3,"Name":"Polres Metropolitan","x":null,"y":null},"geometry":{"type":"Point","coordinates":[681157.271272766636685,9315400.253935094922781,0.0]}}
+]
+}
