@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSpot | Bookstore Location Analysis</title>
+</head>
+
+    <style>
+        *{margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Arial, Helvetica, sans-serif;}
+
+        body{
+            background:#f8f4ef;
+            color:#333;
+            line-height:1.8;}
+
+        /* Navbar */
+        header{
+            background:#5d4037;
+            position:sticky;
+            top:0;}
+
+        nav{
+            width:90%;
+            margin:auto;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 0;}
+
+        nav h2{
+            color:white;}
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:25px;}
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;}
+
+        nav a:hover{
+            color:#ffd54f;}        
+
+        /* Section */
+        section{
+            width:85%;
+            margin:auto;
+            padding:70px 0;}
+
+        section h1{
+            color:#5d4037;
+            margin-bottom:15px;}
+
+        section h2{
+            margin-top:30px;
+            margin-bottom:10px;}
+
+        section img{
+            width:100%;
+            max-width:850px;
+            margin-top:20px;
+            border-radius:10px;}
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;}
+
+        table,th,td{
+            border:1px solid #999;}
+
+        th{
+            background:#d7ccc8;}
+
+        th,td{
+            padding:12px;
+            text-align:left;}
+
+        ul,ol{
+            margin-left:20px;}
+
+        input,textarea{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;}
+
+        input[type="submit"]{
+            width:180px;
+            background:#5d4037;
+            color:white;
+            border:none;
+            cursor:pointer;}
+
+        input[type="submit"]:hover{
+            background:#7b5e57;}
+
+        iframe{
+            width:100%;
+            height:500px;
+            border:0;
+            margin-top:20px;}
+
+        footer{
+            background:#5d4037;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:40px;}
+    </style>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+        <nav>
+            <h2>📚 BookSpot</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#map">Map</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- ================= HOME ================= -->
+
+    <main>
+        <section id="home">
+            <h1>BookSpot</h1>
+            <h3>Finding the Best Location for a New Bookstore</h3>
+            <p>
+                BookSpot is a GIS-based project that aims to identify suitable
+                locations for establishing a new bookstore. This project applies
+                spatial analysis by considering accessibility, nearby educational
+                facilities, commercial areas, and the distribution of existing
+                bookstores.
+            </p>
+            <img src="bookstore.jpg"
+                alt="Bookstore Illustration"
+                class="bookstore-illustration">
+        </section>
+        <hr>
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about">
+            <h1>About Project</h1>
+            <p>
+                This website was created as part of the WebGIS Development
+                Bootcamp assignment using HTML and CSS.
+            </p>
+            <h2>Author</h2>
+            <table border="1">
+                <tr>
+                    <th>Name</th>
+                    <td>Zakiya Rozqi Auliya'</td>
+                </tr>
+                <tr>
+                    <th>University</th>
+                    <td>Universitas Indonesia</td>
+                </tr>
+                    <tr>
+                    <th>Year</th>
+                    <td>2021 - 2025</td>
+                </tr>
+                <tr>
+                    <th>Major</th>
+                    <td>Geography</td>
+                </tr>
+            </table>
+
+            <br>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>GIS</li>
+                <li>ArcGIS</li>
+                <li>QGIS</li>
+                <li>Spatial Analysis</li>
+            </ul>
+
+            <h2>Contact</h2>
+            <form>
+                <label>Name</label><br>
+                <input type="text"><br><br>
+                <label>Email</label><br>
+                <input type="email"><br><br>
+                <label>Message</label><br>
+                <textarea rows="5" cols="40"></textarea>
+                <br><br>
+                <input type="submit" value="Send Message">
+            </form>
+
+        </section>
+        <hr>
+
+        <!-- ================= MAP ================= -->
+
+        <section id="map">
+            <h1>Bookstore Suitability Map</h1>
+            <p>
+                The following map illustrates the preliminary spatial analysis
+                for determining suitable locations for a new bookstore in
+                Malang Raya.
+            </p>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=..."
+            ></iframe>  
+            <h2>Legend</h2>
+            <ol>
+                <li>🟢 High Suitability</li>
+                <li>🟡 Medium Suitability</li>
+                <li>🔴 Low Suitability</li>
+            </ol>
+        </section>
+
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+        <p>
+            © 2026 BookSpot | Created by Zakiya Rozqi Auliya'
+        </p>
+    </footer>
+
+</body>
+</html>
